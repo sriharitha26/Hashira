@@ -16,7 +16,7 @@ unsigned long long lagrangeInterpolation(int k, int *x, unsigned long long *y) {
                 term *= (0.0 - x[j]) / (x[i] - x[j]);
             }
         }
-        result += (unsigned long long)(term + 0.5); // rounding
+        result += (unsigned long long)(term + 0.5); 
     }
     return result;
 }
@@ -59,3 +59,4 @@ int main() {
     parseAndSolve("testcase2.json");
     return 0;
 }
+
